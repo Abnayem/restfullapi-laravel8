@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('/users/{id?}',[UserApiController::class,'showUser']);
+Route::post('/add-users',[UserApiController::class,'addUser']);
